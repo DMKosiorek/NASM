@@ -1,9 +1,9 @@
-mov ah, 0x0e
+mov ah, 0x0e        ; Indicates that we are working in tele-type mode
 mov al, 65          ; Char 65 is 'A'
 int 0x10
 
 alphabet:
-    add al, 33      ; Becomes char 92, or 'a'
+    add al, 33      ; Becomes char 97, or 'a'
     int 0x10
     sub al, 32
     inc al
